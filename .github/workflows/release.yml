@@ -27,9 +27,9 @@ jobs:
     - name: Setup JFrog CLI
       uses: actions/setup-jfrog-cli@v3.1.0
       env:
-        JF_URL: ${{ secrets.JF_URL }}
-        JF_USER: ${{ secrets.JF_USER }}
-        JF_PASSWORD: ${{ secrets.JF_PASSWORD }}
+        JF_URL: ${{ secrets.JFROG_URL }}
+        JF_USER: ${{ secrets.JFROG_USER }}
+        JF_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
     
     - name: Upload to Artifactory
       run: |
