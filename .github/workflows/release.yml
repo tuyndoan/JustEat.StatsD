@@ -34,4 +34,4 @@ jobs:
     - name: Upload to Artifactory
       run: |
         jf rt ping
-        jf rt u "./JustEat.StatsD/*.nupkg" "sep-nuget/Packages/"
+        jf rt u "./JustEat.StatsD/JustEat.StatsD.*.nupkg" "sep-nuget/Packages/"
